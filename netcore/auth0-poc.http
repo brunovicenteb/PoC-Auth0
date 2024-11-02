@@ -1,0 +1,6 @@
+@auth0_poc_HostAddress = http://localhost:5160
+
+GET {{auth0_poc_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

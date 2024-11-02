@@ -1,0 +1,14 @@
+<div>
+  <h1>Bem-vindo à sua aplicação ToDo</h1>
+
+  <div *ngIf="!(auth.isAuthenticated$ | async); else loggedIn">
+    <button (click)="login()">Login</button>
+  </div>
+
+  <ng-template #loggedIn>
+    <button (click)="logout()">Logout</button>
+    <button (click)="redirectToTodos()">Ir para Tarefas</button> <!-- Botão de redirecionamento -->
+  </ng-template>
+</div>
+
+<router-outlet></router-outlet>

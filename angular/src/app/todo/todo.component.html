@@ -1,0 +1,19 @@
+<div>
+  <h1>Minhas Tarefas</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Título</th>
+        <th>Concluída</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of todoItems">
+        <td>{{ item.id }}</td>
+        <td>{{ item.title }}</td>
+        <td>{{ item.isCompleted ? 'Sim' : 'Não' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
